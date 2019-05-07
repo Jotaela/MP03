@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Servidor d'actualitzacions Abc213\n\n\n\n\n\n\nAquesta p\u00e0gina estaa dedicada el servidor WSUS, un servei de windows Active Directory orientat a gestionar i administrar les c\u00f2pies de seguretat dels nostres equips windows units al domini:  \n\n\n1 Instal\u00b7laci\u00f3:\n\n\n\n\nPer a instal\u00b7lar el servei haurem d'acudir un altre cop a Agregar roles y caracter\u00edsticas. En aquest cas el rol ser\u00e0 \nWindows Server Update Services\n:\n\n\n\n\n  \n\n\nEn aquest pas li assignarem la unitat de disc que hem instal\u00b7lat en el nostre sistema previament:\n\n\n  \n\n\nQuan finalitzi la instal\u00b7laci\u00f3 executarem la configuraci\u00f3 posterior simplement fent clic sobre \nIniciar tareas posteriores a la instalaci\u00f3n\n:\n\n\n  \n\n\n\n\n2. Configuraci\u00f3:\n\n\n\n\nAra ja podrem accedir a \nWindows Server Update Services\n.\n\n\n  \n\n\nPer a configurar el nostre WSUS ens mourem a \nOpciones\n -> \nAsistente para la configuaci\u00f3n del servidor WSUS\n:\n\n\n  \n\n\nDurant la configuraci\u00f3 seguirem les seg\u00fcents captures:\n\n\n\n\n\n\n  \n\n\nAqu\u00ed triarem els diferents idiomes en els que volem al actualitzaci\u00f3:\n\n\n  \n\n\nAquesta pantalla definir\u00e0 quines son les actualitzacions que volem desar:\n\n\n\n\n\n\n\n\n  \n\n\nUn cop hagi acabat sol ens quedara esperar a que sincronitzi:\n\n\n  \n\n\nAra passarem un moment al client i configurarem les actualitzacions per a que no les cerque:\n\n\n  \n\n\nTornem al servidor, on aquest cop, dins de l'eina WSUS aprobarem totes les actualitzacions tal com es motra en les seg\u00fcents captures:\n\n\n\n\n  \n\n\nEn aquesta pantalla aprobarem les diferents caselles amb \nclic-dret\n -> \nApreobada para su instalaci\u00f3n\n:\n\n  \n\n\nI acceptarem tots els termes de llicencia...\n\n\n  \n\n\nSeguirem creant un nou grup d'equips dins de la pestanya \nTodos los equipos\n de l'eina WSUS:\n\n\n  \n\n\nI a \nOpciones\n -> \nEquipos\n canviarem el seu estat a \nUsar directiva de grupo i configuraci\u00f3n de REgistro de equipos\n:\n\n\n  \n\n\n\n\n4. GPOs:\n\n\n\n\nAqu\u00ed passarem a crear una nova GPO per als equips que vulguessem sincronitzar amb el nostre WSUS:\n\n\n  \n\n\nLa nova GPO es configurar\u00e0 tal com es motra en mles seg\u00fcents captures. El cam\u00ed fins a les seg\u00fcents GPOs \u00e9s \nConfiguraci\u00f3n de equipo\n -> \nDirectivas\n -> \nPlantillas administrativas\n -> \nComponentes de Winodws/Windows Update\n.\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\nAplicarem els canvis amb un gpupdate com sempre:\n\n\n  \n\n\nQuan Actialitzasem al client ho far\u00e0 a trav\u00e9s del server i s'ens sincronitzar\u00e0:\n\n  \n\n\n\n\n5. Report Viewer Redestributable 2008:\n\n\n\n\nPrimer, si no ho tenim ja instal\u00b7lat, haurem de agregar el .Net Framework 3.5 des de Agregar roles:\n\n\n  \n\n\nSol hem de baixar-mos el paquet que ens demana el sistema de la p\u00e0gina de Microsoft i instal\u00b7lar-lo.\n\n\n  \n\n\nJa podem utilitzar els nostre informes!!!",
+            "title": "Home"
+        },
+        {
+            "location": "/#servidor-dactualitzacions-abc213",
+            "text": "Aquesta p\u00e0gina estaa dedicada el servidor WSUS, un servei de windows Active Directory orientat a gestionar i administrar les c\u00f2pies de seguretat dels nostres equips windows units al domini:",
+            "title": "Servidor d'actualitzacions Abc213"
+        },
+        {
+            "location": "/#1-installacio",
+            "text": "Per a instal\u00b7lar el servei haurem d'acudir un altre cop a Agregar roles y caracter\u00edsticas. En aquest cas el rol ser\u00e0  Windows Server Update Services :       En aquest pas li assignarem la unitat de disc que hem instal\u00b7lat en el nostre sistema previament:      Quan finalitzi la instal\u00b7laci\u00f3 executarem la configuraci\u00f3 posterior simplement fent clic sobre  Iniciar tareas posteriores a la instalaci\u00f3n :",
+            "title": "1 Instal\u00b7laci\u00f3:"
+        },
+        {
+            "location": "/#2-configuracio",
+            "text": "Ara ja podrem accedir a  Windows Server Update Services .      Per a configurar el nostre WSUS ens mourem a  Opciones  ->  Asistente para la configuaci\u00f3n del servidor WSUS :      Durant la configuraci\u00f3 seguirem les seg\u00fcents captures:        Aqu\u00ed triarem els diferents idiomes en els que volem al actualitzaci\u00f3:      Aquesta pantalla definir\u00e0 quines son les actualitzacions que volem desar:         Un cop hagi acabat sol ens quedara esperar a que sincronitzi:      Ara passarem un moment al client i configurarem les actualitzacions per a que no les cerque:      Tornem al servidor, on aquest cop, dins de l'eina WSUS aprobarem totes les actualitzacions tal com es motra en les seg\u00fcents captures:       En aquesta pantalla aprobarem les diferents caselles amb  clic-dret  ->  Apreobada para su instalaci\u00f3n :     I acceptarem tots els termes de llicencia...      Seguirem creant un nou grup d'equips dins de la pestanya  Todos los equipos  de l'eina WSUS:      I a  Opciones  ->  Equipos  canviarem el seu estat a  Usar directiva de grupo i configuraci\u00f3n de REgistro de equipos :",
+            "title": "2. Configuraci\u00f3:"
+        },
+        {
+            "location": "/#4-gpos",
+            "text": "Aqu\u00ed passarem a crear una nova GPO per als equips que vulguessem sincronitzar amb el nostre WSUS:      La nova GPO es configurar\u00e0 tal com es motra en mles seg\u00fcents captures. El cam\u00ed fins a les seg\u00fcents GPOs \u00e9s  Configuraci\u00f3n de equipo  ->  Directivas  ->  Plantillas administrativas  ->  Componentes de Winodws/Windows Update .           Aplicarem els canvis amb un gpupdate com sempre:      Quan Actialitzasem al client ho far\u00e0 a trav\u00e9s del server i s'ens sincronitzar\u00e0:",
+            "title": "4. GPOs:"
+        },
+        {
+            "location": "/#5-report-viewer-redestributable-2008",
+            "text": "Primer, si no ho tenim ja instal\u00b7lat, haurem de agregar el .Net Framework 3.5 des de Agregar roles:      Sol hem de baixar-mos el paquet que ens demana el sistema de la p\u00e0gina de Microsoft i instal\u00b7lar-lo.      Ja podem utilitzar els nostre informes!!!",
+            "title": "5. Report Viewer Redestributable 2008:"
+        }
+    ]
+}
